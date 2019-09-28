@@ -1,25 +1,37 @@
 <!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Ghassan Seba Bio Page</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <header>
+    <h1>Ghassan Seba</h1>
+  </header>  
+  <main class="container">
+      <section id="main-bio">
+        <section id="figure">
+          <h2 id="bio-name">Ghassan Seba</h2>
+          <img id="bio-image" src="profile2.jpg" alt="Ghassan Seba">
+        </section>
+        <p>Hi! My name is Ghassan Seba and this is my bio page, please feel free to look around!</p>
+      </section>
 
-  <h1>Ghassan Seba</h1>
-
-  <img src="https://placehold.it/200x200" alt="Ghassan Seba">
-
-  <p>Write a short paragraph about yourself or some placeholder text.</p>
-  <p>A second short paragraph about yourself or some placeholder text.</p>
-
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:gseba7@gmail.com">gseba7@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="https://github.com/gseba">https://github.com/gseba</a></li>
-    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ghassanseba/">https://www.linkedin.com/in/ghassanseba/</a></li>
-  </ul>
-
+      <aside id="contact-info">
+          <h2>Contact Info</h2>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:gseba7@gmail.com">gseba7@gmail.com</a></li>
+            <li><strong>Github:</strong> <a href="https://github.com/gseba">https://github.com/gseba</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ghassanseba/">https://www.linkedin.com/in/ghassanseba/</a></li>
+            <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+          </ul>
+        </aside>
   <table>
     <tr>
       <th>Books</th>
@@ -42,6 +54,8 @@
       <td>Dragon Age: Origins</td>
     </tr>
   </table>
+
+  </main>
 
 </body>
 
