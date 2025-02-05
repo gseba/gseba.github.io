@@ -1,62 +1,90 @@
 <!DOCTYPE html>
-<!-- CSS Stylesheets with Relative Paths -->
-<html lang="en-us">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ghassan Seba Bio Page</title>
-
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghassan Seba | Data Analyst & Program Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <header>
-    <h1>Ghassan Seba</h1>
-  </header>  
-  <main class="container">
-      <section id="main-bio">
-        <section id="figure">
-          <h2 id="bio-name">Ghassan Seba</h2>
-          <img id="bio-image" src="profile2.jpg" alt="Ghassan Seba">
-        </section>
-        <p>Hi! My name is Ghassan Seba and this is my bio page, please feel free to look around!</p>
-      </section>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  
+  <!-- Header -->
+  <header class="bg-blue-600 text-white text-center py-6 shadow-lg">
+    <h1 class="text-3xl font-bold">Ghassan Seba</h1>
+    <p class="text-lg">Data Analyst | Program Manager | Applied Data Science</p>
+  </header>
 
-      <aside id="contact-info">
-          <h2>Contact Info</h2>
-          <ul>
-            <li><strong>Email:</strong> <a href="mailto:gseba7@gmail.com">gseba7@gmail.com</a></li>
-            <li><strong>Github:</strong> <a href="https://github.com/gseba">https://github.com/gseba</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ghassanseba/">https://www.linkedin.com/in/ghassanseba/</a></li>
-            <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+  <!-- Main Container -->
+  <main class="container mx-auto px-6 py-10 max-w-4xl">
+    
+    <!-- About Me Section -->
+    <section class="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+      <img class="w-40 h-40 rounded-full border-4 border-blue-500 object-cover mx-auto md:mx-0 md:mr-6" 
+           src="profile2.jpg" 
+           alt="Ghassan Seba">
+      <div>
+        <h2 class="text-2xl font-semibold">👋 Hi there, I'm Ghassan!</h2>
+        <p class="text-gray-700 mt-2">
+          I’m a Data Analyst and Program Manager with 20 years of experience in workforce development, 
+          program management, and data analytics. Currently, I’m pursuing my Master’s in Applied Data Science 
+          at the University of San Diego, focusing on machine learning, natural language processing, and data visualization.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">🎓 Education</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+        <li><strong>M.S. in Applied Data Science</strong> — University of San Diego (2023-2024)</li>
+        <li><strong>Certificate in Data Science & Visualization</strong> — UC San Diego Extended Studies (2019-2020)</li>
+        <li><strong>B.S. in Finance</strong> — San Diego State University (2006-2009)</li>
+      </ul>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">💼 Professional Experience</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-lg font-semibold">Program Manager - Workforce Development | NAVWAR</h3>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Developed **ETL pipelines** & dashboards to track training and certifications across the organization.</li>
+            <li>Created **interactive Tableau dashboards** for real-time performance monitoring.</li>
+            <li>Led a **large-scale training program** on Office 365 & DoD Secure Cloud for 600+ employees.</li>
           </ul>
-        </aside>
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>Hot Fuzz</td>
-      <td>Dark Souls</td>
-    </tr>
-    <tr>
-      <td>The Name of the Wind</td>
-      <td>The Avengers</td>
-      <td>The Last of Us</td>
-    </tr>
-    <tr>
-      <td>The Girl With All the Gifts</td>
-      <td>The Matrix</td>
-      <td>Dragon Age: Origins</td>
-    </tr>
-  </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">🛠 Tech Stack</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-gray-700">
+        <span class="bg-gray-200 p-2 rounded-lg">Python</span>
+        <span class="bg-gray-200 p-2 rounded-lg">SQL</span>
+        <span class="bg-gray-200 p-2 rounded-lg">R</span>
+        <span class="bg-gray-200 p-2 rounded-lg">JavaScript</span>
+        <span class="bg-gray-200 p-2 rounded-lg">HTML</span>
+        <span class="bg-gray-200 p-2 rounded-lg">Tableau</span>
+        <span class="bg-gray-200 p-2 rounded-lg">Git</span>
+        <span class="bg-gray-200 p-2 rounded-lg">VS Code</span>
+      </div>
+    </section>
+
+    <!-- Contact Info -->
+    <aside class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">📫 Connect with Me</h2>
+      <ul class="space-y-2">
+        <li><strong>Email:</strong> <a href="mailto:gseba7@gmail.com" class="text-blue-600 hover:underline">gseba7@gmail.com</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/gseba" class="text-blue-600 hover:underline">github.com/gseba</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ghassanseba/" class="text-blue-600 hover:underline">linkedin.com/in/ghassanseba</a></li>
+        <li><strong>Portfolio:</strong> <span class="text-gray-500">Coming soon...</span></li>
+      </ul>
+    </aside>
 
   </main>
 
 </body>
-
 </html>
